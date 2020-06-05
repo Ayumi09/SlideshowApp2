@@ -18,53 +18,56 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="sn0-2d-zXi">
                                 <rect key="frame" x="85.5" y="430" width="243" height="36"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhl-N3-2eo">
-                                        <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
-                                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.41058433219178081" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="進む">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzH-Mb-Xb7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgg-Q9-exX">
-                                        <rect key="frame" x="101" y="0.0" width="41" height="36"/>
-                                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.41058433219178081" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="戻る">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="returnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQz-hd-x5v"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67N-3h-Xbl">
-                                        <rect key="frame" x="202" y="0.0" width="41" height="36"/>
-                                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.41058433219178081" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="再生">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="playstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eB-Bg-tdf"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="gNz-dT-KiO">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhl-N3-2eo">
+                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
+                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.41058433219178081" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="進む">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzH-Mb-Xb7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgg-Q9-exX">
+                                                <rect key="frame" x="101" y="0.0" width="41" height="36"/>
+                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.41058433219178081" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="戻る">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="returnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQz-hd-x5v"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67N-3h-Xbl">
+                                                <rect key="frame" x="202" y="0.0" width="41" height="36"/>
+                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.41058433219178081" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="再生">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eB-Bg-tdf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-hc-4Yc">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-hc-4Yc">
                                 <rect key="frame" x="87" y="87" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="cfD-6M-QdG" appends="YES" id="mlL-1f-Q8y"/>
                                     <outletCollection property="gestureRecognizers" destination="cfD-6M-QdG" appends="YES" id="j0S-ry-u1Y"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-j3-LrH">
-                                <rect key="frame" x="88" y="87" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-j3-LrH">
+                                <rect key="frame" x="87" y="84" width="240" height="30"/>
                                 <connections>
                                     <action selector="imageTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xno-fm-UYD"/>
                                 </connections>
@@ -72,6 +75,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.89203783643696677" blue="0.96793899848118758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DMo-j3-LrH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="2hr-Wo-rwp"/>
+                            <constraint firstItem="oHQ-hc-4Yc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="49m-Eq-3ke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DMo-j3-LrH" secondAttribute="trailing" constant="87" id="7fW-kI-Vy4"/>
+                            <constraint firstItem="DMo-j3-LrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="IWj-Oh-6mG"/>
                             <constraint firstItem="sn0-2d-zXi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nb7-Lh-uFI"/>
                             <constraint firstItem="sn0-2d-zXi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OCq-O6-RZ7"/>
                         </constraints>
@@ -112,14 +119,14 @@
                                     <action selector="backBtn:" destination="PYw-Qe-7qz" eventType="touchUpInside" id="tij-vS-VF6"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMg-vw-lOo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMg-vw-lOo">
                                 <rect key="frame" x="53" y="30" width="309" height="326"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98027485609999998" green="0.90068954229999998" blue="0.96581035849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hkh-Co-zXv" firstAttribute="centerX" secondItem="OIH-qu-QfI" secondAttribute="centerX" id="cac-ND-W7f"/>
+                            <constraint firstItem="GMg-vw-lOo" firstAttribute="centerX" secondItem="OIH-qu-QfI" secondAttribute="centerX" id="hQu-DJ-Tzh"/>
                             <constraint firstItem="hkh-Co-zXv" firstAttribute="centerY" secondItem="OIH-qu-QfI" secondAttribute="centerY" id="iPh-r1-mHD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vAp-kf-CEl"/>
