@@ -141,12 +141,23 @@ class ViewController: UIViewController {
     
     @IBAction func imageTap(_ sender: Any) {
     
+        //timerを止める
+        timer.invalidate()
+        //ボタンの名前を’再生’にする
+        playstopButton.setTitle("再生", for: .normal)
+        //timer.isValid == true
+        //ボタンの色を”青”にする
+        playstopButton.setTitleColor(UIColor.black, for: .normal )
+        //進むボタンとぼ戻るボタンを押せるようにする
+        nextButton.isEnabled = true
+        returnButton.isEnabled = true
+        
         self.performSegue(withIdentifier: "tonextViewController", sender: nil)
     }
     
         //遷移元から遷移先に画像を移動
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //segueから遷移先のResultViewControllerのインスタンスを取得する
+        //segueから遷移先のnextViewControllerのインスタンスを取得する
         let nextViewController:nextViewController = segue.destination as! nextViewController
         
             //表示されている画像の名前をとる
